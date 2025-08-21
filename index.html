@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Games by Brandon</title>
+  <meta name="description" content="Privacy policies for Brandon's games." />
+  <style>
+    :root{
+      --blue-bg:#0f2d52; --btn-bg:#000; --btn-text:#e8e8e8; --btn-hover:#111; --radius:14px;
+    }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+         background:var(--blue-bg);color:#fff;display:grid;place-items:center}
+    .wrap{width:100%;max-width:840px;padding:32px 20px 48px;text-align:center}
+    h1{margin:0 0 18px;font-size:clamp(24px,4vw,40px)}
+    p.sub{margin:0 0 28px;opacity:.9}
+    .btn{display:inline-block;padding:18px 22px;border-radius:var(--radius);
+         background:var(--btn-bg);color:var(--btn-text);text-decoration:none;font-weight:600;
+         border:1px solid #222;transition:transform .06s,background .15s}
+    .btn:hover{background:var(--btn-hover);transform:translateY(-1px)}
+    .btn:active{transform:translateY(0)}
+    .footer{margin-top:32px;font-size:12px;opacity:.65}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Games by Brandon</h1>
+    <p class="sub">Privacy policies and info for my games.</p>
+    <a class="btn" href="./left-is-right/privacy.html">Left is Right — Privacy Policy</a>
+    <div class="footer">© <span id="yr"></span> Games by Brandon</div>
+  </main>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
